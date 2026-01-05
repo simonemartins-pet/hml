@@ -4,13 +4,13 @@
 =================================================== */
 
 #campanhas-wrapper {
-  padding: 30px 16px 8px; /* menos espaço acima e quase nada abaixo */
+  padding: 20px 16px 4px; /* menos espaço acima e quase nada abaixo */
   margin-bottom: 0;
 }
 
 /* Swiper container */
 #campanhas-wrapper .swiper {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
   margin-bottom: 0;
 }
