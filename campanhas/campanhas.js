@@ -261,6 +261,95 @@ function iniciarCampanhas() {
         </div>
       </div>
     `
+  },
+  /* 🏡 VISITAS DOMICILIARES */
+  {
+    id: "visitas-domiciliares",
+    alwaysOn: true,
+    html: `
+      <div class="swiper-slide">
+        <div style="background: linear-gradient(135deg,#06b6d4,#2563eb);">
+          <h3>🏡 Visitas Domiciliares</h3>
+          <p>Seu pet recebe atenção, alimentação e carinho sem sair do conforto do lar.</p>
+          <a href="https://wa.me/5521972045256" class="btn">📅 Agende uma visita</a>
+        </div>
+      </div>
+    `
+  },
+
+  /* 🛏️ HOSPEDAGEM SEGURA */
+  {
+    id: "hospedagem-segura",
+    alwaysOn: true,
+    html: `
+      <div class="swiper-slide">
+        <div style="background: linear-gradient(135deg,#f59e0b,#d97706);">
+          <h3>🛏️ Hospedagem Segura</h3>
+          <p>Ambiente acolhedor e seguro para quando você precisar viajar.</p>
+          <a href="https://wa.me/5521972045256" class="btn">🐾 Reserve hospedagem</a>
+        </div>
+      </div>
+    `
+  },
+
+  /* 🚿 BANHO E HIGIENE */
+  {
+    id: "banho-higiene",
+    alwaysOn: true,
+    html: `
+      <div class="swiper-slide">
+        <div style="background: linear-gradient(135deg,#0ea5e9,#38bdf8);">
+          <h3>🚿 Banho com Carinho</h3>
+          <p>Higiene e bem-estar garantidos, com atenção especial ao conforto do seu pet.</p>
+          <a href="https://wa.me/5521972045256" class="btn">✨ Agendar banho</a>
+        </div>
+      </div>
+    `
+  },
+
+  /* ❤️ CONFIANÇA E CARINHO */
+  {
+    id: "confianca-carinho",
+    alwaysOn: true,
+    html: `
+      <div class="swiper-slide">
+        <div style="background: linear-gradient(135deg,#ec4899,#f472b6);">
+          <h3>❤️ Pet Sitter de Confiança</h3>
+          <p>Cuidados responsáveis e carinhosos, todos os dias do ano.</p>
+          <a href="https://wa.me/5521972045256" class="btn">🐾 Conheça meus serviços</a>
+        </div>
+      </div>
+    `
+  },
+
+  /* 🐕 PASSEIOS SEGUROS */
+  {
+    id: "passeios-seguros",
+    alwaysOn: true,
+    html: `
+      <div class="swiper-slide">
+        <div style="background: linear-gradient(135deg,#22c55e,#16a34a);">
+          <h3>🐕 Passeios Seguros e Divertidos</h3>
+          <p>Caminhadas em horários adequados, garantindo saúde e alegria para seu pet.</p>
+          <a href="https://wa.me/5521972045256" class="btn">📅 Agende um passeio</a>
+        </div>
+      </div>
+    `
+  },
+
+  /* 👶🐾 ATENÇÃO ESPECIAL */
+  {
+    id: "atencao-especial",
+    alwaysOn: true,
+    html: `
+      <div class="swiper-slide">
+        <div style="background: linear-gradient(135deg,#a78bfa,#6366f1);">
+          <h3>👶🐾 Atenção Especial</h3>
+          <p>Cuidados diferenciados para filhotes cheios de energia e pets idosos que precisam de calma.</p>
+          <a href="https://wa.me/5521972045256" class="btn">❤️ Solicite atendimento especial</a>
+        </div>
+      </div>
+    `
   }
 ];
 
