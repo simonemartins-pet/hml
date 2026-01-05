@@ -17,11 +17,6 @@
 
     <link rel="stylesheet" href="assets/css/style.css">
 	
-	<!-- Campanhas -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-
-	<link rel="stylesheet" href="campanhas/campanhas.css">
-
 </head>
 <body>
 
@@ -60,22 +55,36 @@
 
     <main>
 
-	<section id="campanhas"></section>
+		<!-- Swiper CSS -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
-	<script>
-	  fetch('campanhas/campanhas.html')
-		.then(res => res.text())
-		.then(html => {
-		  const container = document.getElementById('campanhas');
-		  container.innerHTML = html;
+		<section id="campanhas"></section>
 
-		  // Agora sim o DOM existe
-		  const script = document.createElement('script');
-		  script.src = 'campanhas/campanhas.js';
-		  script.defer = true;
-		  document.body.appendChild(script);
-		});
-	</script>
+		<!-- Swiper JS -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+		<script>
+		  fetch('/campanhas/campanhas.html')
+			.then(r => r.text())
+			.then(html => {
+			  document.getElementById('campanhas').innerHTML = html;
+
+			  const script = document.createElement('script');
+			  script.src = '/campanhas/campanhas.js';
+
+			  script.onload = () => {
+				if (typeof iniciarCampanhas === "function") {
+				  iniciarCampanhas();
+				} else {
+				  console.error("Função iniciarCampanhas não encontrada");
+				}
+			  };
+
+			  document.body.appendChild(script);
+			})
+			.catch(err => console.error("Erro ao carregar campanhas", err));
+		</script>
+
 
 	
         <section id="inicio" class="hero">

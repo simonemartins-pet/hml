@@ -1,29 +1,32 @@
-const MODO_TESTE = false;
+function iniciarCampanhas() {
 
-function hoje() {
-  return new Date();
-}
+  /* 🔐 Garantias */
+  const container = document.getElementById("swiperSlides");
+  const wrapper = document.getElementById("campanhas-wrapper");
 
-/* ===================== CAMPANHAS ===================== */
-const campanhas = [
+  if (!container || !wrapper) {
+    console.error("Campanhas: HTML não encontrado no DOM");
+    return;
+  }
 
-  /* 🌿 CAMPANHA FIXA (EVERGREEN) */
-  {
-    id: "cuidados-naturais",
-    alwaysOn: true,
-    html: `
-      <div class="swiper-slide">
-        <div style="background: linear-gradient(135deg,#22c55e,#059669);">
-          <h3>🌿 Cuidados naturais contra pulgas</h3>
-          <p>Descubra plantas que ajudam a manter o ambiente livre de parasitas.</p>
-          <a href="artigos/dicas-da-simone.html" class="btn">
-            🌱 Saber mais
-          </a>
+  /* ===================== CAMPANHAS ===================== */
+  const campanhas = [
+    {
+      id: "cuidados-naturais",
+      alwaysOn: true,
+      html: `
+        <div class="swiper-slide">
+          <div style="background: linear-gradient(135deg,#22c55e,#059669);">
+            <h3>🌿 Cuidados naturais contra pulgas</h3>
+            <p>Descubra plantas que ajudam a manter o ambiente livre de parasitas.</p>
+            <a href="artigos/dicas-da-simone.html" class="btn">
+              🌱 Saber mais
+            </a>
+          </div>
         </div>
-      </div>
-    `
-  },
-
+      `
+    },
+	
   /* ☀️ VERÃO */
   {
     id: "verao",
@@ -73,29 +76,37 @@ const campanhas = [
   }
 ];
 
-
-function campanhaAtiva(c) {
-  if (c.alwaysOn) return true;
-  if (!c.start || !c.end) return false;
-
-  const agora = hoje();
-  const inicio = new Date(c.start + "T00:00:00");
-  const fim = new Date(c.end + "T23:59:59");
-  return agora >= inicio && agora <= fim;
-}
-
-const container = document.getElementById("swiperSlides");
-let total = 0;
-
-campanhas.forEach(c => {
-  if (campanhaAtiva(c)) {
-    container.insertAdjacentHTML("beforeend", c.html);
-    total++;
+  function hoje() {
+    return new Date();
   }
-});
 
-if (total > 0) {
-  document.getElementById("campanhas-wrapper").style.display = "block";
+  function campanhaAtiva(c) {
+    if (c.alwaysOn) return true;
+    if (!c.start || !c.end) return false;
+
+    const agora = hoje();
+    const inicio = new Date(c.start + "T00:00:00");
+    const fim = new Date(c.end + "T23:59:59");
+    return agora >= inicio && agora <= fim;
+  }
+
+  let total = 0;
+
+  campanhas.forEach(c => {
+    if (campanhaAtiva(c)) {
+      container.insertAdjacentHTML("beforeend", c.html);
+      total++;
+    }
+  });
+
+  if (total === 0) return;
+
+  wrapper.style.display = "block";
+
+  if (typeof Swiper === "undefined") {
+    console.error("Swiper não carregado");
+    return;
+  }
 
   new Swiper(".mySwiper", {
     loop: total > 1,
