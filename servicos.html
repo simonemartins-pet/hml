@@ -16,28 +16,7 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 	
-	<!-- Import Swiper CSS -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
     <link rel="stylesheet" href="assets/css/style.css">
-	<style>
-		/* Botões de navegação */
-	.swiper-button-next,
-	.swiper-button-prev {
-	  color: #fff; /* deixa as setas brancas */
-	}
-
-	/* Paginação (bolinhas) */
-	.swiper-pagination-bullet {
-	  background: #fff; /* bolinhas brancas */
-	  opacity: 0.7;     /* leve transparência */
-	}
-
-	.swiper-pagination-bullet-active {
-	  background: #fff; /* bolinha ativa também branca */
-	  opacity: 1;       /* destaque na ativa */
-	}
-</style>
 </head>
 <body>
 
@@ -79,62 +58,6 @@
 	  <div class="container">
 	  <div class="agendamento-box" style="margin-top: 0 !important; padding: 10px; border-radius: 24px; background: white; box-shadow: 0 10px 30px rgba(0,0,0,0.05); text-align: center;">
 		  <span class="badge">CUIDADOS COMPLETOS PARA SEU PET</span>
-	  <div class="container mx-auto text-center" style="margin-top: 0 !important;">
-		<h2 id="campanhas" class="text-3xl font-bold mb-6">✨ Campanhas Especiais ✨</h2>
-	</div></div>
-		<!-- Swiper -->
-		<div class="swiper mySwiper mx-auto text-center">
-		  <div class="swiper-wrapper">
-
-			<!-- Slide 1 -->
-			<div class="swiper-slide">
-			  <div class="bg-gradient-to-r from-pink-500 to-red-500 text-white rounded-lg p-8 shadow">
-				<h3 class="text-2xl font-bold mb-4">☀️ Banho refrescante de verão</h3>
-				    <p class="max-w-2xl mx-auto mb-6">
-					Cuidados especiais para que seu amigo fique limpo, cheiroso e feliz mesmo nos dias mais quentes! ⚠️ Garanta já o banho do seu pet.</p>
-				<a href=href="https://wa.me/5521972045256?text=Olá,%20quero%20agendar%20banho%20refrescante%20de%20verão%20para%20meu%20pet"
-				   class="bg-white text-pink-600 font-semibold px-6 py-3 rounded-lg shadow hover:bg-gray-100 transition">
-				  📅 Agendar agora
-				</a>
-			  </div>
-			</div>
-
-			<!-- Slide 2 -->
-			<div class="swiper-slide">
-			  <div class="bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-lg p-8 shadow">
-				<h3 class="text-2xl font-bold mb-4">🏡 Hospedagem no feriadão de São Sebastião</h3>
-				<p class="max-w-2xl mx-auto mb-6">De 17 a 20 de janeiro no Rio de Janeiro. ⚠️ Vagas limitadas!</p>
-				<a href="https://wa.me/5521972045256?text=Olá,%20quero%20reservar%20hospedagem%20para%20meu%20pet%20no%20feriadão"
-				   class="bg-white text-blue-600 font-semibold px-6 py-3 rounded-lg shadow hover:bg-gray-100 transition">
-				  📅 Reservar hospedagem
-				</a>
-			  </div>
-			</div>
-
-			<!-- Slide 3 -->
-			<div class="swiper-slide">
-			  <div class="bg-gradient-to-r from-green-500 to-emerald-600 text-white rounded-lg p-8 shadow">
-				<h3 class="text-2xl font-bold mb-4">🌿 Cuidados naturais contra pulgas</h3>
-				<p class="mb-6">Descubra plantas que ajudam a manter o ambiente livre de parasitas.</p>
-				<a href="artigos/dicas-da-simone.html"
-				   class="bg-white text-green-600 font-semibold px-6 py-3 rounded-lg shadow hover:bg-gray-100 transition">
-				  🌱 Saber mais
-				</a>
-			  </div>
-			</div>
-
-		  </div>
-
-		  <!-- Botões de navegação -->
-		  <div class="swiper-button-next"></div>
-		  <div class="swiper-button-prev"></div>
-
-		  <!-- Paginação -->
-		  <div class="swiper-pagination"></div>
-		</div>
-	  </div>
-	</section>
-
         <section class="servicos-grid">
             <div class="container">
                 
@@ -244,27 +167,6 @@
 <!-- ================= JS EXTERNO ================= -->
 <script src="assets/js/main3.js" defer></script>
 <script src="assets/js/sazonal.js" defer></script>
-
-<!-- Import Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-<script>
-  var swiper = new Swiper(".mySwiper", {
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
-</script>
 
 </body>
 </html>
