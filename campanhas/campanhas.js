@@ -46,7 +46,7 @@ function iniciarCampanhas() {
   /* 🏡 SÃO SEBASTIÃO */
   {
     id: "sao-sebastiao",
-    start: "2026-01-10",
+    start: "2026-01-05",
     end: "2026-01-20",
     html: `
       <div class="swiper-slide">
