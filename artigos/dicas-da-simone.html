@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dicas | Simone Martins</title>
+
+	  <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+	
+	  <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+	<style>
+	.tabs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); /* define colunas flexíveis */
+  gap: 10px;               /* espaço entre os botões */
+  justify-content: center;
+  border-bottom: 2px solid #eee;
+  margin-bottom: 1rem;
+
+}
+
+.tab-btn {
+  background: none;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-weight: 500;
+  color: var(--text-dark);
+  transition: all 0.3s ease;
+}
+
+.tab-btn:hover {
+  border-color: var(--primary-pink);
+  background: var(--primary-pink);
+  color: #fff;
+}
+
+.tab-btn.ativo {
+  border-bottom: 2px solid var(--primary-pink);
+  color: var(--primary-pink);
+    /* adiciona cor de fundo e cor da letra */
+  background: var(--primary-pink);
+  color: #fff;
+}
+.servicos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* cria colunas flexíveis */
+  gap: 20px; /* espaço entre os cards */
+  margin-top: 1rem;
+}
+</style>
+
+</head>
+<body>
+
+    <header class="topo">
+        <div class="logo">
+            <img src="../img/icone.webp" alt="Logo Simone Martins" class="logo-img">
+            <span class="nome">Simone Martins</span>
+        </div>
+        
+        <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+
+			<nav class="menu">
+			  <ul>
+				<li><a href="../index.html">Início</a></li>
+				<li><a href="../servicos.html">Serviços</a></li>
+				<li class="has-submenu">
+				  <a href="#" class="ativo">Artigos</a>
+				  <ul class="submenu">
+					<li><a href="dicas-da-simone.html">Dicas da Simone</a></li>
+					<li><a href="em-breve.html">Reportagens</a></li>
+					<li><a href="em-breve.html">Cuidados</a></li>
+					<li><a href="em-breve.html">Quizz</a></li>
+				  </ul>
+				</li>
+				<li><a href="../faq.html">FAQ</a></li>
+				<li><a href="../sobre.html">Sobre</a></li>
+				<li><a href="#" id="openSearch"><i class="fas fa-search"></i></a></li>
+			  </ul>
+			</nav>
+
+        <div class="acoes">
+            <a href="../index.html#agendamento" class="btn btn-secondary">📅 Agendar</a>
+            <a href="https://wa.me/5521972045256" target="_blank" class="btn btn-primary"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        </div>
+    </header>
+
+    <main>
+	<section class="py-8" aria-labelledby="dicas-pet">
+	  <div class="container">
+		<!-- Cabeçalho -->
+				<div class="agendamento-box" style="margin-top: 0 !important; padding: 10px; border-radius: 24px; background: white; box-shadow: 0 10px 30px rgba(0,0,0,0.05); text-align: center;">
+		  <span class="badge">DICAS DA SIMONE</span>
+		  <h2 id="dicas-pet" class="section-title">Cuidados e orientações para tutores</h2>
+		  <p style="color: var(--text-gray); max-width: 800px; margin: 1rem auto;">
+			Clique no botão desejado para ler as dicas que separei para você!
+		  </p>
+		</div>
+
+		<!-- Botões -->
+		<div class="tabs" style="text-align:center; margin: 1rem 0;">
+		  <button class="btn btn-primary tab-btn" data-target="hospedagem">🐾 Hospedagem</button>
+		  <button class="btn btn-primary tab-btn" data-target="festas">🎆 Festas</button>
+		  <button class="btn btn-primary tab-btn" data-target="banho-cachorro">🐶 Banho de cachorro</button>
+		  <button class="btn btn-primary tab-btn" data-target="banho-gatos">😺 Banho em gatos</button>
+		  <button class="btn btn-primary tab-btn" data-target="plantas">🌿 Plantas repelentes</button>
+		  <button class="btn btn-primary tab-btn" data-target="fogos">🎇 Fogos de Artifício</button>
+		</div>
+
+		<!-- Conteúdos -->
+		<div id="tab-conteudo">
+
+		  <!-- Hospedagem -->
+		  <div id="hospedagem" class="tab-card" style="display:none;">
+			<div class="servicos-grid" style="max-width:1200px; margin:0 auto;">
+
+			  <div class="service-card rosa">
+				<div class="card-header"><h3>🎒 Antes de deixar seu pet com o pet sitter, organize alguns itens essenciais para que ele se sinta em casa:</h3></div>
+				<ul>
+				  <li>🐾 Cama ou manta favorita</li>
+				  <li>🥣 Ração e potes de água</li>
+				  <li>🧸 Brinquedos preferidos</li>
+				  <li>💊 Medicação, se necessário</li>
+				</ul>
+				<div class="servico-acoes">
+				  <a href="https://wa.me/5521972045256?text=Olá,%20quero%20agendar%20hospedagem%20para%20meu%20pet" 
+					 class="btn btn-primary" style="width:100%; justify-content:center;">
+					Agendar hospedagem
+				  </a>
+				</div>
+			  </div>
+			  <div class="service-card verde">
+				<div class="card-header"><h3>👜 Monte uma pequena mala para garantir que nada falte durante a estadia ou visita:</h3></div>
+				<ul>
+				  <li>📋 Lista com horários de alimentação</li>
+				  <li>🪮 Escova ou itens de higiene</li>
+				  <li>🎾 Brinquedos para distração</li>
+				  <li>📸 Fotos para lembrar rotina</li>
+				</ul>
+				<div class="servico-acoes">
+				  <a href="https://wa.me/5521972045256?text=Olá,%20quero%20agendar%20visita%20para%20meu%20pet" 
+					 class="btn btn-primary" style="width:100%; justify-content:center;">
+					Solicitar visita
+				  </a>
+				</div>
+			  </div>
+			</div>
+		  </div>
+
+
+		  <!-- Festas -->
+		  <div id="festas" class="tab-card" style="display:none;">
+			<div class="servicos-grid" style="max-width:600px; margin:0 auto;">
+
+			  <div class="service-card laranja">
+				<div class="card-header"><h3>🎆 Fogos e festas podem assustar os pets. Algumas medidas ajudam a tornar o momento mais tranquilo:</h3></div>
+				<ul>
+				  <li>🏠 Prepare um espaço silencioso</li>
+				  <li>🎶 Use música calma para mascarar ruídos</li>
+				  <li>💬 Fique por perto e transmita segurança</li>
+				  <li>🦴 Ofereça brinquedos recheáveis para distração</li>
+				</ul>
+				<div class="servico-acoes">
+				  <a href="https://wa.me/5521972045256?text=Olá,%20quero%20orientações%20para%20reduzir%20o%20estresse%20do%20meu%20pet%20em%20datas%20festivas" 
+					 class="btn btn-primary" style="width:100%; justify-content:center;">
+					Falar com Simone
+				  </a>
+				</div>
+			  </div>
+			</div>
+		  </div>
+
+		  <!-- Banho de cachorro -->
+		  <div id="banho-cachorro" class="tab-card" style="display:none;">
+			<div class="servicos-grid" style="max-width:1200px; margin:0 auto;">
+
+			  <div class="service-card rosa">
+				<div class="card-header"><h3>🚿 Banho em cães: precisa ser todo mês?</h3></div>
+				<p style="margin: 1rem auto; text-align: justify;">
+				O banho é essencial para manter a saúde e o bem-estar do cachorro, mas não existe uma regra fixa de “todo mês”. 
+				A frequência ideal depende da pelagem, rotina e até do clima. O importante é observar os sinais do pet e manter a higiene sem exageros.
+			  </p>
+				<ul>
+				  <li>🐕 Pelos longos: banhos mais frequentes</li>
+				  <li>🐶 Pelos curtos: intervalos maiores</li>
+				  <li>🌦️ Clima quente: banhos mais regulares</li>
+				  <li>❄️ Clima frio: espaçar mais</li>
+				</ul>
+				<div class="servico-acoes">
+				  <a href="https://wa.me/5521972045256?text=Olá,%20quero%20agendar%20banho%20para%20meu%20cachorro" 
+					 class="btn btn-primary" style="width:100%; justify-content:center;">
+					Agendar banho com Simone
+				  </a>
+				</div>
+			  </div>
+			  <div class="service-card verde">
+				<div class="card-header"><h3>✨ Dicas rápidas</h3></div>
+				<ul>
+				  <li>De acordo com especialistas, cães podem tomar banho a cada 15 dias ou até mais, dependendo da necessidade</li>
+				  <li>Não exagere na frequência: excesso pode causar problemas de pele.</li>
+				  <li>Observe sinais de mau cheiro, sujeira visível ou coceira </li>
+				  <li>Associe o banho a momentos positivos com petiscos e carinho</li>
+				  <li>Use shampoo específico para cães</li>
+				</ul>
+				<div class="servico-acoes">
+				  <a href="https://wa.me/5521972045256?text=Olá,%20quero%20orientações%20personalizadas%20para%20o%20banho%20do%20meu%20pet" 
+					 class="btn btn-primary" style="width:100%; justify-content:center;">
+					Para saber mais, clique aqui!
+				  </a>
+				</div>
+			  </div>
+			</div>
+		  </div>
+
+		  <!-- Banho em gatos -->
+		  <div id="banho-gatos" class="tab-card" style="display:none;">
+			<div class="servicos-grid" style="max-width:1200px; margin:0 auto;">
+
+			  <div class="service-card rosa">
+				<div class="card-header"><h3>🌡️ O banho só é indicado em casos específicos, como:</h3></div>
+				<ul>
+					<li>🐾 Gatos com dificuldade de se limpar (idosos ou obesos)</li>
+					<li>🧴 Situações de sujeira excessiva ou contato com substâncias tóxicas</li>
+					<li>🐱 Gatos acostumados ao banho desde filhotes</li>
+				</ul>
+				<div class="servico-acoes">
+				  <a href="https://wa.me/5521972045256?text=Olá,%20quero%20saber%20se%20meu%20gato%20precisa%20de%20banho" 
+					 class="btn btn-primary" style="width:100%; justify-content:center;">
+					Falar com Simone
+				  </a>
+				</div>
+			  </div>
+			  <div class="service-card verde">
+				<div class="card-header"><h3>💧 Existem formas seguras de aliviar o calor sem precisar molhar o pet:</h3></div>
+				<ul>
+				<li>🧊 Toalhas úmidas e frescas no ambiente</li>
+				<li>🌬️ Ventiladores ou ar-condicionado com temperatura amena</li>
+				<li>🥣 Água fresca disponível em vários pontos da casa</li>
+				<li>🪟 Ambientes sombreados e tranquilos</li>
+				</ul>
+				<p style="margin: 1rem auto; text-align: justify;">
+				Gatos são naturalmente limpos e raramente precisam de banho. Mas em dias muito quentes, algumas estratégias podem ajudar a refrescar e aliviar o desconforto térmico.
+			  </p>
+				<div class="servico-acoes">
+				  <a href="https://wa.me/5521972045256?text=Olá,%20quero%20dicas%20para%20refrescar%20meu%20gato%20no%20verão" 
+					 class="btn btn-primary" style="width:100%; justify-content:center;">
+					Solicitar orientação
+				  </a>
+				</div>
+			  </div>
+			  <div class="service-card laranja">
+				<div class="card-header"><h3>🛁 Se o banho for realmente necessário, siga estas recomendações:</h3></div>
+				<ul>
+					<li>🌡️ Use água morna e ambiente calmo</li>
+					<li>🧼 Shampoo específico para gatos</li>
+					<li>🧺 Seque bem com toalha e evite secador quente</li>
+					<li>😻 Recompense com carinho e petiscos</li>
+				</ul>
+				<div class="servico-acoes">
+				  <a href="https://wa.me/5521972045256?text=Olá,%20quero%20agendar%20banho%20para%20meu%20gato" 
+					 class="btn btn-primary" style="width:100%; justify-content:center;">
+					Agendar banho com Simone
+				  </a>
+				</div>
+			  </div>
+			</div>
+		  </div>
+
+		  <!-- Plantas -->
+		  <div id="plantas" class="tab-card" style="display:none;">
+			<div class="servicos-grid" style="max-width:1200px; margin:0 auto;">
+
+			  <div class="service-card rosa">
+				<div class="card-header"><h3>🌱 Alecrim</h3></div>
+				<p>O alecrim possui aroma intenso que ajuda a repelir pulgas e carrapatos.</p>
+				<ul>
+				  <li>🌿 Pode ser cultivado em vasos dentro de casa</li>
+				  <li>🪴 Também funciona em jardins e quintais</li>
+				  <li>💧 Fácil de cuidar e resistente</li>
+				</ul>
+				<div class="servico-acoes">
+				  <a href="https://wa.me/5521972045256?text=Olá,%20quero%20dicas%20sobre%20uso%20de%20alecrim%20para%20meu%20pet" 
+					 class="btn btn-primary" style="width:100%; justify-content:center;">
+					Falar com Simone
+				  </a>
+				</div>
+			  </div>
+			  <div class="service-card verde">
+				<div class="card-header"><h3>🌿 Lavanda</h3></div>
+				<p>Além de repelir parasitas, a lavanda traz sensação de calma e bem-estar.</p>
+				<ul>
+				  <li>😌 Aroma suave que relaxa o ambiente</li>
+				  <li>🐾 Ajuda a manter pulgas e carrapatos afastados</li>
+				  <li>🌸 Pode ser usada em vasos decorativos</li>
+				</ul>
+				<div class="servico-acoes">
+				  <a href="https://wa.me/5521972045256?text=Olá,%20quero%20saber%20como%20usar%20lavanda%20para%20proteger%20meu%20pet" 
+					 class="btn btn-primary" style="width:100%; justify-content:center;">
+					Solicitar orientação
+				  </a>
+				</div>
+			  </div>
+			  <div class="service-card laranja">
+				<div class="card-header"><h3>✅ Cuidados importantes</h3></div>
+				<p>As plantas ajudam, mas não substituem os cuidados veterinários e a higiene regular.</p>
+				<ul>
+				  <li>🧼 Mantenha o ambiente limpo</li>
+				  <li>🐶 Escove o pet regularmente</li>
+				  <li>💊 Consulte o veterinário sobre prevenção adequada</li>
+				</ul>
+				<div class="servico-acoes">
+				  <a href="https://wa.me/5521972045256?text=Olá,%20quero%20agendar%20serviço%20para%20prevenção%20de%20pulgas%20e%20carrapatos" 
+					 class="btn btn-primary" style="width:100%; justify-content:center;">
+					Agendar cuidados com Simone
+				  </a>
+				</div>
+			  </div>
+			</div>
+		  </div>
+			<!-- Fogos de Artifício -->
+			<div id="fogos" class="tab-card" style="display:none;">
+			<div class="servicos-grid" style="max-width:1200px; margin:0 auto;">
+				
+				<!-- Card 1 -->
+				<div class="service-card rosa">
+				  <div class="card-header"><h3>🏠 Crie um refúgio seguro</h3></div>
+				  <p>Prepare um espaço silencioso e acolhedor para seu cão durante os fogos.</p>
+				  <ul>
+					<li>🛏️ Cama, cobertor e brinquedos favoritos no mesmo cômodo.</li>
+					<li>🚪 Feche janelas e cortinas para reduzir ruídos e luzes.</li>
+					<li>🎶 Música calma ou TV em volume baixo para “mascarar” os estouros.</li>
+				  </ul>
+				  <div class="servico-acoes">
+					<a href="https://wa.me/5521972045256?text=Olá,%20quero%20dicas%20para%20preparar%20um%20refúgio%20seguro%20para%20meu%20cão" 
+					   class="btn btn-primary" style="width:100%; justify-content:center;">
+					  Falar com Simone
+					</a>
+				  </div>
+				</div>
+
+				<!-- Card 2 -->
+				<div class="service-card verde">
+				  <div class="card-header"><h3>⏰ Antecipe-se antes dos fogos</h3></div>
+				  <p>Organize a rotina com antecedência nos dias de fogos para reduzir a reatividade.</p>
+				  <ul>
+					<li>🐕 Passeios e brincadeiras mais cedo para gastar energia.</li>
+					<li>🥣 Garanta água e alimentação disponíveis.</li>
+					<li>🏡 Mantenha o cão dentro de casa durante os fogos.</li>
+				  </ul>
+				  <div class="servico-acoes">
+					<a href="https://wa.me/5521972045256?text=Olá,%20quero%20orientações%20para%20rotina%20do%20meu%20cão%20em%20dias%20de%20fogos" 
+					   class="btn btn-primary" style="width:100%; justify-content:center;">
+					  Solicitar orientação
+					</a>
+				  </div>
+				</div>
+
+				<!-- Card 3 -->
+				<div class="service-card laranja">
+				  <div class="card-header"><h3>👩‍👦 Esteja presente e ofereça distrações</h3></div>
+				  <p>Sua referência de calma ajuda o cão a atravessar o momento com mais segurança.</p>
+				  <ul>
+					<li>💬 Fale com tom calmo e permaneça por perto.</li>
+					<li>🦴 Use brinquedos recheáveis ou mastigáveis para focar no positivo.</li>
+					<li>✅ Reforce comandos simples (sentar, deitar) com recompensas.</li>
+				  </ul>
+				  <div class="servico-acoes">
+					<a href="https://wa.me/5521972045256?text=Olá,%20quero%20dicas%20de%20distrações%20para%20meu%20cão%20durante%20fogos" 
+					   class="btn btn-primary" style="width:100%; justify-content:center;">
+					  Falar com Simone
+					</a>
+				  </div>
+				</div>
+
+				<!-- Card 4 -->
+				<div class="service-card verde" role="note">
+				  <div class="card-header"><h3>🎉 Hospedagem no Réveillon</h3></div>
+				  <p style="margin: 1rem auto;">
+					Enquanto você aproveita a virada do ano com tranquilidade, seu pet pode ficar em um ambiente seguro e acolhedor. 
+					Ofereço serviço de <strong>hospedagem domiciliar</strong>, garantindo atenção, carinho e cuidados especiais durante todo o período de festas.
+				  </p>
+				  <ul>
+					<li>🐾 Ambiente familiar e livre de estresse</li>
+					<li>🕒 Rotina de alimentação e passeios mantida</li>
+					<li>📸 Fotos e vídeos enviados diariamente</li>
+					<li>💊 Administração de medicação, se necessário</li>
+				  </ul>
+				  <div class="servico-acoes">
+					<a href="https://wa.me/5521972045256?text=Olá,%20gostaria%20de%20solicitar%20Hospedagem%20para%20meu%20pet%20no%20Réveillon" 
+					   class="btn btn-primary" style="width:100%; justify-content:center;">
+					  Quer saber mais? Me chame no WhatsApp
+					</a>
+				  </div>
+				</div>
+
+			  </div>
+			</div>		  
+	</section>
+    </main>
+	
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-col">
+                <div class="logo" style="color: white; margin-bottom: 1rem;">
+                    <img src="../img/icone.webp" alt="Logo" class="logo-img" style="filter: brightness(0) invert(1);">
+                    <span>Simone Martins</span>
+                </div>
+                <p style="color: #fff;">Cuidado humanizado e profissional para cães e gatos.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Acesso Rápido</h4>
+                <ul style="list-style: none;">
+                    <li><a href="../index.html" style="color: #fff; text-decoration: none;">Início</a></li>
+                    <li><a href="../servicos.html" style="color: #fff; text-decoration: none;">Serviços</a></li>
+                    <li><a href="../index.html#agendamento" style="color: #fff; text-decoration: none;">Agendar</a></li>
+                </ul>
+            </div>
+            <div id="contato" class="footer-col">
+                <h4>Contato</h4>
+                <p style="color: #fff;"><i class="fab fa-whatsapp"></i> (21) 97204-5256</p>
+                <p style="color: #fff;"><i class="fab fa-instagram"></i> simonemartins-pet</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Simone Martins Pet Sitter. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+
+<a href="https://wa.me/5521972045256" class="whatsapp-flutuante" target="_blank" rel="noopener noreferrer">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<div id="searchModal">
+    <div class="search-content">
+        <button id="closeSearch">&times;</button>
+        <h3>O que você procura?</h3>
+        <input type="text" id="searchInput" placeholder="Digite pelo menos 3 letras...">
+        <ul id="searchResults"></ul>
+    </div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const buttons = document.querySelectorAll(".tab-btn");
+  const cards = document.querySelectorAll(".tab-card");
+
+  buttons.forEach(btn => {
+    btn.addEventListener("click", function() {
+      // Esconde todos os conteúdos
+      cards.forEach(card => card.style.display = "none");
+      // Remove ativo dos botões
+      buttons.forEach(b => b.classList.remove("ativo"));
+      // Mostra o conteúdo da aba clicada
+      const target = this.getAttribute("data-target");
+      document.getElementById(target).style.display = "block";
+      // Marca botão ativo
+      this.classList.add("ativo");
+    });
+  });
+});
+</script>
+
+<!-- ================= JS EXTERNO ================= -->
+<script src="../assets/js/main3.js" defer></script>
+<script src="../assets/js/sazonal.js" defer></script>
+
+</body>
+</html>

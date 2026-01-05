@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ & Dicas | Simone Martins</title>
+
+	  <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+	
+	  <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="topo">
+        <div class="logo">
+            <img src="img/icone.webp" alt="Logo Simone Martins" class="logo-img">
+            <span class="nome">Simone Martins</span>
+        </div>
+        
+        <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+        
+			<nav class="menu">
+			  <ul>
+				<li><a href="index.html">Início</a></li>
+				<li><a href="servicos.html">Serviços</a></li>
+				<li class="has-submenu">
+				  <a href="#">Artigos</a>
+				  <ul class="submenu">
+					<li><a href="artigos/dicas-da-simone.html">Dicas da Simone</a></li>
+					<li><a href="artigos/em-breve.html">Reportagens</a></li>
+					<li><a href="artigos/em-breve.html">Cuidados</a></li>
+					<li><a href="artigos/em-breve.html">Quizz</a></li>
+				  </ul>
+				</li>
+				<li><a href="faq.html" class="ativo">FAQ</a></li>
+				<li><a href="sobre.html">Sobre</a></li>
+				<li><a href="#" id="openSearch"><i class="fas fa-search"></i></a></li>
+			  </ul>
+			</nav>
+
+        <div class="acoes">
+            <a href="index.html#agendamento" class="btn btn-secondary">📅 Agendar</a>
+            <a href="https://wa.me/5521972045256" target="_blank" class="btn btn-primary"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        </div>
+    </header>
+
+<main>
+  <section style="margin-top: 2rem;">
+	<section style="margin-top: 2rem;">
+			  <div class="container">
+			  <div class="agendamento-box" style="margin-top: 0 !important; padding: 10px; border-radius: 24px; background: white; box-shadow: 0 10px 30px rgba(0,0,0,0.05); text-align: center;">
+					
+					<span class="badge">DÚVIDAS</span>
+						<h2 class="section-title">Como posso te ajudar?</h2>
+
+						<div class="faq-nav" style="display: flex; justify-content: center; gap: 15px; margin-bottom: 20px; flex-wrap: wrap;">
+						<button class="faq-btn active"
+								data-arquivo="partials/perguntas.html"
+								onclick="carregarConteudoFAQ(this.dataset.arquivo, this)">
+						  <i class="fas fa-question-circle"></i> Perguntas Frequentes
+						</button>
+
+						<button class="faq-btn"
+								data-arquivo="partials/dicas.html"
+								onclick="carregarConteudoFAQ(this.dataset.arquivo, this)">
+						  <i class="fas fa-lightbulb"></i> Dicas Importantes
+						</button>
+						</div>
+					</div>
+				</div>
+
+						<div id="faq-content-container" class="faq-content-box">
+							<p style="text-align: center;">Carregando informações...</p>
+						</div>
+
+
+			</section>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+
+
+    <a href="https://wa.me/5521972045256" class="whatsapp-flutuante">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+   <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-col">
+                <div class="logo" style="color: white; margin-bottom: 1rem;">
+                    <img src="img/icone.webp" alt="Logo" class="logo-img" style="filter: brightness(0) invert(1);">
+                    <span>Simone Martins</span>
+                </div>
+                <p style="color: #fff;">Cuidado humanizado e profissional para cães e gatos.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Acesso Rápido</h4>
+                <ul style="list-style: none;">
+                    <li><a href="index.html" style="color: #fff; text-decoration: none;">Início</a></li>
+                    <li><a href="servicos.html" style="color: #fff; text-decoration: none;">Serviços</a></li>
+                    <li><a href="index.html#agendamento" style="color: #fff; text-decoration: none;">Agendar</a></li>
+                </ul>
+            </div>
+            <div id="contato" class="footer-col">
+                <h4>Contato</h4>
+                <p style="color: #fff;"><i class="fab fa-whatsapp"></i> (21) 97204-5256</p>
+                <p style="color: #fff;"><i class="fab fa-instagram"></i> simonemartins-pet</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Simone Martins Pet Sitter. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+<div id="searchModal">
+    <div class="search-content">
+        <button id="closeSearch">&times;</button>
+        <h3>O que você procura?</h3>
+        <input type="text" id="searchInput" placeholder="Digite pelo menos 3 letras...">
+        <ul id="searchResults"></ul>
+    </div>
+</div>
+
+<!-- ================= JS EXTERNO ================= -->
+<script src="assets/js/main3.js" defer></script>
+<script src="assets/js/sazonal.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+/* ===================================================
+   CAMPANHAS SAZONAIS / EVERGREEN
+   Arquivo isolado para evitar conflitos
+=================================================== */
+
+#campanhas-wrapper {
+  padding: 40px 16px;
+}
+
+/* Swiper container */
+#campanhas-wrapper .swiper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Slide */
+#campanhas-wrapper .swiper-slide > div {
+  border-radius: 20px;
+  padding: 40px 28px;
+  color: #ffffff;
+  text-align: center;
+  box-shadow: 0 25px 50px rgba(0,0,0,.15);
+}
+
+/* Títulos */
+#campanhas-wrapper h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+/* Texto */
+#campanhas-wrapper p {
+  max-width: 720px;
+  margin: 0 auto 24px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+/* Botões */
+#campanhas-wrapper .btn {
+  display: inline-block;
+  background: #ffffff;
+  color: #333;
+  padding: 14px 30px;
+  border-radius: 999px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all .25s ease;
+}
+
+#campanhas-wrapper .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(0,0,0,.2);
+}
+
+/* Navegação Swiper */
+#campanhas-wrapper .swiper-button-next,
+#campanhas-wrapper .swiper-button-prev {
+  color: #ffffff;
+}
+
+/* Paginação */
+#campanhas-wrapper .swiper-pagination-bullet {
+  background: #ffffff;
+  opacity: .5;
+}
+
+#campanhas-wrapper .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+/* Responsivo */
+@media (max-width: 640px) {
+  #campanhas-wrapper .swiper-slide > div {
+    padding: 28px 18px;
+  }
+
+  #campanhas-wrapper h3 {
+    font-size: 1.4rem;
+  }
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Em Breve</title>
+
+	  <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+	
+	  <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+    <header class="topo">
+        <div class="logo">
+            <img src="../img/icone.webp" alt="Logo Simone Martins" class="logo-img">
+            <span class="nome">Simone Martins</span>
+        </div>
+        
+        <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+
+			<nav class="menu">
+			  <ul>
+				<li><a href="../index.html">Início</a></li>
+				<li><a href="../servicos.html">Serviços</a></li>
+				<li class="has-submenu">
+				  <a href="#" class="ativo">Artigos</a>
+				  <ul class="submenu">
+					<li><a href="dicas-da-simone.html">Dicas da Simone</a></li>
+					<li><a href="em-breve.html">Reportagens</a></li>
+					<li><a href="em-breve.html">Cuidados</a></li>
+					<li><a href="em-breve.html">Quizz</a></li>
+				  </ul>
+				</li>
+				<li><a href="../faq.html">FAQ</a></li>
+				<li><a href="../sobre.html">Sobre</a></li>
+				<li><a href="#" id="openSearch"><i class="fas fa-search"></i></a></li>
+			  </ul>
+			</nav>
+
+        <div class="acoes">
+            <a href="../index.html#agendamento" class="btn btn-secondary">📅 Agendar</a>
+            <a href="https://wa.me/5521972045256" target="_blank" class="btn btn-primary"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        </div>
+    </header>
+
+	<!-- CONTEÚDO -->
+	
+	  <main class="flex items-center justify-center px-6 pt-8">
+		<section class="max-w-xl text-center bg-white rounded-3xl shadow-lg p-10 mb-8">
+		  <div class="text-6xl mb-6">🚧</div>
+
+		  <h1 class="text-3xl font-extrabold mb-4"
+			  style="color: var(--hero-to);">
+			Página em construção
+		  </h1>
+
+		  <p class="text-gray-600 text-lg leading-relaxed mb-6">
+			Estou preparando com muito carinho uma página especial para você!</p>
+
+		  <p class="text-gray-500 mb-8">
+			Em breve, este espaço trará todas essas informações ✨
+		  </p>
+
+		</section>
+	  </main>
+
+	
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-col">
+                <div class="logo" style="color: white; margin-bottom: 1rem;">
+                    <img src="../img/icone.webp" alt="Logo" class="logo-img" style="filter: brightness(0) invert(1);">
+                    <span>Simone Martins</span>
+                </div>
+                <p style="color: #fff;">Cuidado humanizado e profissional para cães e gatos.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Acesso Rápido</h4>
+                <ul style="list-style: none;">
+                    <li><a href="../index.html" style="color: #fff; text-decoration: none;">Início</a></li>
+                    <li><a href="../servicos.html" style="color: #fff; text-decoration: none;">Serviços</a></li>
+                    <li><a href="../index.html#agendamento" style="color: #fff; text-decoration: none;">Agendar</a></li>
+                </ul>
+            </div>
+            <div id="contato" class="footer-col">
+                <h4>Contato</h4>
+                <p style="color: #fff;"><i class="fab fa-whatsapp"></i> (21) 97204-5256</p>
+                <p style="color: #fff;"><i class="fab fa-instagram"></i> simonemartins-pet</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Simone Martins Pet Sitter. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+
+<a href="https://wa.me/5521972045256" class="whatsapp-flutuante" target="_blank" rel="noopener noreferrer">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<div id="searchModal">
+    <div class="search-content">
+        <button id="closeSearch">&times;</button>
+        <h3>O que você procura?</h3>
+        <input type="text" id="searchInput" placeholder="Digite pelo menos 3 letras...">
+        <ul id="searchResults"></ul>
+    </div>
+</div>
+
+<!-- ================= JS EXTERNO ================= -->
+<script src="../assets/js/main3.js" defer></script>
+
+</body>
+</html>
