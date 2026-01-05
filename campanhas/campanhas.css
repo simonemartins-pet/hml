@@ -4,13 +4,19 @@
 =================================================== */
 
 #campanhas-wrapper {
-  padding: 40px 16px;
+  padding: 16px 16px 8px; /* menos espaço acima e quase nada abaixo */
+  margin-bottom: 0;
 }
 
 /* Swiper container */
 #campanhas-wrapper .swiper {
   max-width: 1100px;
   margin: 0 auto;
+  margin-bottom: 0;
+}
+
+#campanhas-wrapper + section {
+  margin-top: 32px;
 }
 
 /* Slide */
