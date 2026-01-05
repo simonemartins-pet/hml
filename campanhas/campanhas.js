@@ -37,7 +37,7 @@ function iniciarCampanhas() {
         <div style="background: linear-gradient(135deg,#ec4899,#ef4444);">
           <h3>☀️ Banho refrescante de verão</h3>
           <p>Cuidados especiais para os dias mais quentes.</p>
-          <a href="#" class="btn">📅 Agendar agora</a>
+          <a href="https://wa.me/5521972045256" class="btn">📅 Agendar agora</a>
         </div>
       </div>
     `
@@ -53,7 +53,7 @@ function iniciarCampanhas() {
         <div style="background: linear-gradient(135deg,#2563eb,#06b6d4);">
           <h3>🏡 Hospedagem no feriadão</h3>
           <p>De 17 a 20 de janeiro · Vagas limitadas</p>
-          <a href="#" class="btn">📅 Reservar</a>
+          <a href="https://wa.me/5521972045256" class="btn">📅 Reservar</a>
         </div>
       </div>
     `
@@ -69,7 +69,195 @@ function iniciarCampanhas() {
         <div style="background: linear-gradient(135deg,#9333ea,#ec4899);">
           <h3>🎭 Carnaval Seguro para Pets</h3>
           <p>Seu pet tranquilo enquanto você aproveita o feriado.</p>
-          <a href="#" class="btn">🐾 Saber mais</a>
+          <a href="https://wa.me/5521972045256" class="btn">🐾 Saber mais</a>
+        </div>
+      </div>
+    `
+  },
+  /* 🏖️ FÉRIAS DE JULHO */
+  {
+    id: "ferias-julho",
+    start: "2026-07-01",
+    end: "2026-07-31",
+    html: `
+      <div class="swiper-slide">
+        <div style="background: linear-gradient(135deg,#06b6d4,#2563eb);">
+          <h3>🏖️ Férias sem Estresse</h3>
+          <p>Apoio para famílias que viajam e deixam os pets em casa.</p>
+          <a href="https://wa.me/5521972045256" class="btn">📅 Garantir vaga</a>
+        </div>
+      </div>
+    `
+  },
+
+  /* 🇧🇷 INDEPENDÊNCIA */
+  {
+    id: "independencia",
+    start: "2026-09-01",
+    end: "2026-09-07",
+    html: `
+      <div class="swiper-slide">
+        <div style="background: linear-gradient(135deg,#22c55e,#16a34a);">
+          <h3>🇧🇷 Feriadão com Tranquilidade</h3>
+          <p>Hospedagem e cuidados durante o feriado prolongado.</p>
+          <a href="https://wa.me/5521972045256" class="btn">📅 Reserve já</a>
+        </div>
+      </div>
+    `
+  },
+
+  /* 🎃 HALLOWEEN */
+  {
+    id: "halloween",
+    start: "2026-10-20",
+    end: "2026-10-31",
+    html: `
+      <div class="swiper-slide">
+        <div style="background: linear-gradient(135deg,#000000,#9333ea);">
+          <h3>🎃 Halloween sem sustos</h3>
+          <p>Proteção contra barulhos e visitas, mantendo os pets calmos.</p>
+          <a href="https://wa.me/5521972045256" class="btn">🐾 Saber mais</a>
+        </div>
+      </div>
+    `
+  },
+
+  /* 🎄 NATAL E ANO NOVO */
+  {
+    id: "natal",
+    start: "2026-12-15",
+    end: "2026-12-31",
+    html: `
+      <div class="swiper-slide">
+        <div style="background: linear-gradient(135deg,#22c55e,#16a34a);">
+          <h3>🎄 Fim de Ano com Carinho</h3>
+          <p>Enquanto você celebra, eu cuido do seu pet com amor e segurança.</p>
+          <a href="https://wa.me/5521972045256" class="btn">📅 Reserve já</a>
+        </div>
+      </div>
+    `
+  },
+    /* 🐣 PÁSCOA */
+  {
+    id: "pascoa",
+    start: "2026-03-30",
+    end: "2026-04-05",
+    html: `
+      <div class="swiper-slide">
+        <div style="background: linear-gradient(135deg,#facc15,#f59e0b);">
+          <h3>🐣 Páscoa sem preocupações</h3>
+          <p>Viagens em família? Seu pet fica seguro e feliz comigo.</p>
+          <a href="https://wa.me/5521972045256" class="btn">📅 Garantir vaga</a>
+        </div>
+      </div>
+    `
+  },
+
+  /* 🌸 DIA DAS MÃES */
+  {
+    id: "dia-das-maes",
+    start: "2026-05-01",
+    end: "2026-05-10",
+    html: `
+      <div class="swiper-slide">
+        <div style="background: linear-gradient(135deg,#ec4899,#f472b6);">
+          <h3>🌸 Dia das Mães</h3>
+          <p>Um presente especial: tempo livre sabendo que seu pet está bem cuidado.</p>
+          <a href="https://wa.me/5521972045256" class="btn">🎁 Agendar cuidados</a>
+        </div>
+      </div>
+    `
+  },
+  /* 🎉 FESTAS JUNINAS */
+  {
+    id: "festas-juninas",
+    start: "2026-06-01",
+    end: "2026-06-30",
+    html: `
+      <div class="swiper-slide">
+        <div style="background: linear-gradient(135deg,#f97316,#ea580c);">
+          <h3>🎉 Arraiá Pet Seguro</h3>
+          <p>Proteção contra fogos e barulho, garantindo o bem-estar dos animais.</p>
+          <a href="agenda/juninas.html" class="btn">🐾 Reserve já</a>
+        </div>
+      </div>
+    `
+  },
+  /* 🇧🇷 TIRADENTES */
+  {
+    id: "tiradentes",
+    start: "2026-04-15",
+    end: "2026-04-21",
+    html: `
+      <div class="swiper-slide">
+        <div style="background: linear-gradient(135deg,#22c55e,#16a34a);">
+          <h3>🇧🇷 Feriado de Tiradentes</h3>
+          <p>Viagem no feriado? Seu pet fica seguro e feliz comigo.</p>
+          <a href="agenda/tiradentes.html" class="btn">📅 Garantir vaga</a>
+        </div>
+      </div>
+    `
+  },
+
+  /* 💼 DIA DO TRABALHADOR */
+  {
+    id: "dia-trabalhador",
+    start: "2026-04-25",
+    end: "2026-05-03",
+    html: `
+      <div class="swiper-slide">
+        <div style="background: linear-gradient(135deg,#f59e0b,#d97706);">
+          <h3>💼 Dia do Trabalhador</h3>
+          <p>Aproveite o descanso merecido sem preocupações, seu pet terá companhia e atenção.</p>
+          <a href="https://wa.me/5521972045256" class="btn">📅 Agendar agora</a>
+        </div>
+      </div>
+    `
+  },
+
+  /* 🙏 PADROEIRA DO BRASIL */
+  {
+    id: "padroeira",
+    start: "2026-10-01",
+    end: "2026-10-12",
+    html: `
+      <div class="swiper-slide">
+        <div style="background: linear-gradient(135deg,#ec4899,#f472b6);">
+          <h3>🙏 Feriado da Padroeira</h3>
+          <p>Enquanto você celebra, eu garanto o bem-estar do seu pet.</p>
+          <a href="https://wa.me/5521972045256" class="btn">🐾 Reserve já</a>
+        </div>
+      </div>
+    `
+  },
+
+  /* 🕊️ FINADOS */
+  {
+    id: "finados",
+    start: "2026-10-25",
+    end: "2026-11-02",
+    html: `
+      <div class="swiper-slide">
+        <div style="background: linear-gradient(135deg,#6b7280,#374151);">
+          <h3>🕊️ Feriado de Finados</h3>
+          <p>Momentos de reflexão e descanso, com a certeza de que seu pet está bem cuidado.</p>
+          <a href="https://wa.me/5521972045256" class="btn">📅 Agendar cuidados especiais</a>
+        </div>
+      </div>
+    `
+  },
+
+  /* ✊🏾 CONSCIÊNCIA NEGRA */
+  {
+    id: "consciencia-negra",
+    start: "2026-11-13",
+    end: "2026-11-22",
+    html: `
+      <div class="swiper-slide">
+        <div style="background: linear-gradient(135deg,#111827,#6d28d9);">
+          <h3>✊🏾 Consciência Negra</h3>
+          <p>Aproveite o feriado prolongado sabendo que seu pet terá atenção dedicada.</p>
+          <a href="https://wa.me/5521972045256" class="btn">🐾 Reserve já</a>
         </div>
       </div>
     `
