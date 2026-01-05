@@ -344,8 +344,8 @@ function iniciarCampanhas() {
     html: `
       <div class="swiper-slide">
         <div style="background: linear-gradient(135deg,#a78bfa,#6366f1);">
-          <h3>👶🐾 Atenção Especial</h3>
-          <p>Cuidados diferenciados para filhotes cheios de energia e pets idosos que precisam de calma.</p>
+          <h3>👶🐾 Atendimento Diferenciado</h3>
+          <p>Cuidados especiais para filhotes cheios de energia e pets idosos que precisam de calma.</p>
           <a href="https://wa.me/5521972045256" class="btn">❤️ Solicite atendimento especial</a>
         </div>
       </div>
