@@ -51,7 +51,7 @@ function iniciarCampanhas() {
     html: `
       <div class="swiper-slide">
         <div style="background: linear-gradient(135deg,#2563eb,#06b6d4);">
-          <h3>🏡 Hospedagem no feriadão</h3>
+          <h3>🏡 Hospedagem no feriadão de São Sebastião</h3>
           <p>De 17 a 20 de janeiro · Vagas limitadas</p>
           <a href="https://wa.me/5521972045256" class="btn">📅 Reservar</a>
         </div>
@@ -317,21 +317,6 @@ function iniciarCampanhas() {
           <h3>❤️ Pet Sitter de Confiança</h3>
           <p>Cuidados responsáveis e carinhosos, todos os dias do ano.</p>
           <a href="https://wa.me/5521972045256" class="btn">🐾 Conheça meus serviços</a>
-        </div>
-      </div>
-    `
-  },
-
-  /* 🐕 PASSEIOS SEGUROS */
-  {
-    id: "passeios-seguros",
-    alwaysOn: true,
-    html: `
-      <div class="swiper-slide">
-        <div style="background: linear-gradient(135deg,#22c55e,#16a34a);">
-          <h3>🐕 Passeios Seguros e Divertidos</h3>
-          <p>Caminhadas em horários adequados, garantindo saúde e alegria para seu pet.</p>
-          <a href="https://wa.me/5521972045256" class="btn">📅 Agende um passeio</a>
         </div>
       </div>
     `
