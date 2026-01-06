@@ -51,8 +51,8 @@
   font-weight: 700;
   text-decoration: none;
   transition: all .25s ease;
-  /* background removido */
-  /* color removido */
+  background: #ffffff;
+  color: #333;
 }
 
 #campanhas-wrapper .btn:hover {
