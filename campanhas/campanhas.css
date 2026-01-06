@@ -63,12 +63,12 @@
 /* Navegação Swiper */
 #campanhas-wrapper .swiper-button-next,
 #campanhas-wrapper .swiper-button-prev {
-  /* color removido */
+  color: #ffffff;
 }
 
 /* Paginação */
 #campanhas-wrapper .swiper-pagination-bullet {
-  /* background removido */
+  background: #ffffff;
   opacity: .5;
 }
 
