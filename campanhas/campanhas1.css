@@ -23,9 +23,9 @@
 #campanhas-wrapper .swiper-slide > div {
   border-radius: 20px;
   padding: 40px 28px;
-  color: #ffffff;
   text-align: center;
-  box-shadow: 0 25px 50px rgba(0,0,0,.15);
+  /* box-shadow removido */
+  color: #ffffff;
 }
 
 /* Títulos */
@@ -57,7 +57,7 @@
 
 #campanhas-wrapper .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 12px 25px rgba(0,0,0,.2);
+  /* box-shadow removido */
 }
 
 /* Navegação Swiper */
